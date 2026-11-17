@@ -5,6 +5,21 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+
+- `hiero-solo` skill — updated to the current Solo documentation (Solo v0.97):
+  npm is now the recommended install (Homebrew deprecated since August 31, 2026);
+  corrected one-shot flags (`--deploy-*`, `--minimal-setup`, `--edge`, `--debug`) and
+  removed non-existent ones; `solo one-shot show deployment|accounts`;
+  `solo deployment port-forwards refresh|stop` replaces `deployment refresh port-forwards`;
+  `--consensus-node-version` replaces the deprecated `--release-tag`; version pinning via
+  `*_VERSION` / `*_EDGE_VERSION` environment variables; `accounts.json` layout and the SDK
+  local-node preset pitfalls (JS, Java, Go); new sections on managing a running network
+  (ledger reset, network upgrade, diagnostics), cleanup, a GitHub Actions example, and
+  troubleshooting.
+
 ## [0.3.0] - 2026-07-11
 
 ### Added
