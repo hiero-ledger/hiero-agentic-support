@@ -24,7 +24,7 @@ consensus `localhost:35211` and REST `:38081`; JS's `local-node` preset expects
 consensus `127.0.0.1:50211` and REST `:5551`. Both use mirror gRPC `:5600`. Your
 `.env`/port-forwards must match the SDK under test — and a new SDK should document
 its choice loudly. Don't hardcode assumptions; confirm actual ports from the
-running network (e.g. `solo one-shot show`).
+running network (e.g. `solo deployment config ports --deployment <name>`).
 
 TLS is **off** for local networks: SDKs enable transport security only for
 mainnet/testnet/previewnet presets.
